@@ -1,0 +1,58 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title } = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{ title }</title>
+  </head>
+  <body class="min-h-screen flex justify-center">
+    <Header />
+
+    <main class="my-auto p-5">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  /* Tailwind */
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @font-face {
+    font-family: "GeistVariableVF";
+    src: url("/fonts/GeistVariableVF.woff2") format("truetype");
+
+    font-family: "GeistMonoVariableVF";
+    src: url("/fonts/GeistMonoVariableVF.woff2") format("truetype");
+  }
+
+  @layer base {
+    html {
+      font-family: "GeistMonoVariableVF", system-ui, sans-serif;
+    }
+    body {
+      @apply bg-amber-300;
+      @apply dark:bg-slate-500;
+    }
+
+    p {
+      @apply text-slate-800;
+      @apply dark:text-amber-100;
+    }
+    a {
+      @apply hover:italic;
+    }
+  }
+</style>
