@@ -1,9 +1,11 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import PresseFotoKnut from "../images/pressefoto_Knut.jpeg";
 ---
 
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,11 +17,16 @@ import Footer from "../components/Footer.astro";
   <body class="min-h-screen flex justify-center">
     <Header />
 
-    <main class=" my-auto p-5">
+    <main class="my-auto p-5">
       <div class="flex flex-col justify-center items-center">
         <!--TODO: exchange div to img of me -->
-        <div class="size-40 bg-lime-500"></div>
-        <p class="pt-5 max-w-2xl text-xl text-center">
+        <Image
+          src={PresseFotoKnut}
+          class="size-40 md:size-52 border-4 md:border-6 border-slate-500 dark:border-amber-300"
+          alt="Potrait von Knut Rothe"
+        />
+
+        <p class="pt-5 max-w-2xl md:text-xl text-base text-center">
           Vielseitig | Medien-Informatiker |<br /> Landessprecher der Linksjugend
           [solid’] Thüringen |<br /> SMM des Kinofilms: “Johnny & Me”
         </p>
@@ -53,8 +60,11 @@ import Footer from "../components/Footer.astro";
     }
 
     p {
-      @apply text-slate-900;
-      @apply dark:text-slate-100;
+      @apply text-slate-800;
+      @apply dark:text-amber-100;
+    }
+    a {
+      @apply hover:italic;
     }
   }
 </style>
