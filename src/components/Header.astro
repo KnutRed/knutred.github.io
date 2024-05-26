@@ -3,7 +3,7 @@
 ---
 
 <header class="">
-  <a
+  <a id="#nav-item"
     href="/."
     class="top-5 absolute hover:no-underline animate-none
      text-slate-500 dark:text-amber-300 font-black text-4xl left-5 text-left"
@@ -11,7 +11,7 @@
     Kn<br />
     ut
   </a>
-  <a
+  <a id="#nav-item"
     href="/."
     class="animate-none hover:no-underline top-5 absolute text-red-400 font-black text-4xl right-5 text-right"
   >
@@ -19,3 +19,11 @@
     he
   </a>
 </header>
+<script is:inline>
+  document.querySelector('#nav-item').addEventListener('click', function() {
+  // Vibrate for 200ms
+  if (navigator.vibrate) {
+    navigator.vibrate(200);
+  }
+});
+</script>
