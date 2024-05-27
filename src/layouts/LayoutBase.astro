@@ -39,43 +39,45 @@ const { title } = Astro.props;
     </main>
 
     <Footer />
-  </body><style is:global>
-    /* Tailwind */
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+    <style is:global>
+      /* Tailwind */
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
 
-    @font-face {
-      font-family: "GeistVariableVF";
-      src: url("/fonts/GeistVariableVF.woff2") format("truetype");
+      @font-face {
+        font-family: "GeistVariableVF";
+        src: url("/fonts/GeistVariableVF.woff2") format("truetype");
 
-      font-family: "GeistMonoVariableVF";
-      src: url("/fonts/GeistMonoVariableVF.woff2") format("truetype");
-    }
-
-    @layer base {
-      html {
-        font-family: "GeistMonoVariableVF", system-ui, sans-serif;
-      }
-      body {
-        @apply bg-amber-300;
-        @apply dark:bg-slate-500;
-        @apply text-base;
-        @apply md:text-xl;
-        @apply text-slate-800;
-        @apply dark:text-amber-100;
+        font-family: "GeistMonoVariableVF";
+        src: url("/fonts/GeistMonoVariableVF.woff2") format("truetype");
       }
 
-      p {
+      @layer base {
+        html {
+          font-family: "GeistMonoVariableVF", system-ui, sans-serif;
+        }
+        body {
+          @apply bg-amber-300 selection:bg-slate-500;
+          @apply dark:bg-slate-500 dark:selection:bg-amber-300;
+          @apply text-base;
+          @apply md:text-xl;
+          @apply text-slate-500 selection:text-amber-300;
+          @apply dark:text-amber-300 dark:selection:text-slate-500;
+          
+        }
+
+        p {
+        }
+        h1 {
+          @apply font-bold;
+        }
+        a {
+          @apply hover:underline;
+          @apply hover:animate-pulse;
+          @apply hover:underline-offset-4;
+        }
       }
-      h1 {
-        @apply font-bold;
-      }
-      a {
-        @apply hover:underline;
-        @apply hover:animate-pulse;
-        @apply hover:underline-offset-4;
-      }
-    }
-  </style>
+    </style>
+  </body>
 </html>
