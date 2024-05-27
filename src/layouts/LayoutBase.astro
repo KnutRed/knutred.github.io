@@ -17,11 +17,11 @@ const { title } = Astro.props;
     <ViewTransitions />
 
     <!-- Add Meta tags -->
-    <meta name="description" content="Knut Rothe ist ein freiberuflicher Medien-Informatiker in Jena" />
     <meta
-      name="author"
-      content="Knut Rothe"
+      name="description"
+      content="Knut Rothe ist ein freiberuflicher Medien-Informatiker in Jena"
     />
+    <meta name="author" content="Knut Rothe" />
     <meta
       name="keywords"
       content="Knut, Knut Rothe, Knut Casper Rothe, Rothe, Casper, Web-dev, Red, Knutred, Knut Red, red knut, knut.red, red.knut, redknut"
@@ -46,7 +46,6 @@ const { title } = Astro.props;
       @tailwind utilities;
 
       @font-face {
-
         /*
         Unused so far
         font-family: "GeistVariableVF";
@@ -67,7 +66,6 @@ const { title } = Astro.props;
           @apply md:text-xl;
           @apply text-slate-600 selection:text-amber-300;
           @apply dark:text-amber-300 dark:selection:text-slate-600;
-          
         }
 
         p {
