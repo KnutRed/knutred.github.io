@@ -1,4 +1,4 @@
-# Meine [Knut Red / Knut C. Rothe] Persöhnliche Web-Dev Seite
+# Meine kleine [Knut Red / Knut C. Rothe] Persöhnliche und brutalistische Web-Dev Seite
 
 [knutred.github.io](https://knutred.github.io)
 
