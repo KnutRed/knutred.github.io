@@ -6,7 +6,7 @@
 
 1. [Astro View transitions](https://docs.astro.build/en/guides/view-transitions/) 
 2. Darkmode
-3. Custom  [404 Page] (https://knutred.github.oi/404)
+3. Custom  [404 Page](https://knutred.github.io/404)
 
 ## Pläne
 
