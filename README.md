@@ -1,5 +1,6 @@
 # Meine kleine [Knut Red / Knut C. Rothe] Persöhnliche und brutalistische Web-Dev Seite
 
+![og image](./public/og_knutred.png)
 [knutred.github.io](https://knutred.github.io)
 
 ## Features
