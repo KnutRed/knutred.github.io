@@ -1,12 +1,13 @@
 # Meine kleine [Knut Red / Knut C. Rothe] Persöhnliche und brutalistische Web-Dev Seite
 
+![og image](./public/fonts/og_knutred.png)
 [knutred.github.io](https://knutred.github.io)
 
 ## Features
 
 1. [Astro View transitions](https://docs.astro.build/en/guides/view-transitions/)
 2. Darkmode
-3. 404 Page
+3. Custom  [404 Page](https://knutred.github.io/404)
 
 ## Pläne
 
