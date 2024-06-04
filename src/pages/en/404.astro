@@ -1,0 +1,12 @@
+---
+import Layout from "../../layouts/LayoutBase.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
+---
+
+<Layout title="Projekte">
+  <div transition:animate="fade" class="text-center">
+    <h1>404 [😱]</h1><br />
+
+    <p><a href={getRelativeLocaleUrl("en", "/.")}>Send me back fast!</a></p>
+  </div>
+</Layout>

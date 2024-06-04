@@ -1,12 +1,15 @@
 ---
+import { getLangFromUrl, useTranslatedPath } from "../i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <header class="">
   <a
     onmousedown="navigator.vibrate(100)"
     ontouchstart="navigator.vibrate(100)"
-    href="/."
+    href={translatePath("/")}
     class="top-5 absolute hover:no-underline animate-none
      text-slate-500 dark:text-amber-300 font-black text-4xl left-5 text-left"
   >
@@ -16,7 +19,7 @@
   <a
     onmousedown="navigator.vibrate(100)"
     ontouchstart="navigator.vibrate(100)"
-    href="/."
+    href={translatePath("/")}
     class="animate-none hover:no-underline top-5 absolute text-red-400 font-black text-4xl right-5 text-right"
   >
     Rot<br />

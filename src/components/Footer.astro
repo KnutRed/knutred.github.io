@@ -1,24 +1,34 @@
 ---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
 <footer class="">
   <a
     onmousedown="navigator.vibrate(100)"
     ontouchstart="navigator.vibrate(100)"
-    href="/projekte"
+    href={translatePath("/projekte/")}
     class="text-slate-500 hover:no-underline animate-none absolute left-5 dark:text-amber-300 font-black bottom-5 text-4xl text-left"
   >
-    Proj<br />
-    ekte
+    {t("nav.proj")}
+    <br />
+    {t("nav.jekte")}
   </a>
   <a
     onmousedown="navigator.vibrate(100)"
     ontouchstart="navigator.vibrate(100)"
-    href="/kontakt"
+    href={translatePath("/kontakt/")}
     class="text-slate-500 animate-none hover:no-underline dark:text-amber-300 font-black bottom-5 absolute right-5 text-4xl text-right"
   >
-    Kon<br />
-    takt
+    {t("nav.kon")}
+    <br />
+    {t("nav.takt")}
   </a>
 </footer>

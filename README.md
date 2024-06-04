@@ -4,7 +4,7 @@
 
 ## Features
 
-1. [Astro View transitions](https://docs.astro.build/en/guides/view-transitions/) 
+1. [Astro View transitions](https://docs.astro.build/en/guides/view-transitions/)
 2. Darkmode
 3. 404 Page
 
@@ -13,4 +13,4 @@
 1. Unterstützung verschiedener Sprachen
 2. Easter Eggs, damit es Spaß macht meine Seite zu erkunden
 3. Eigene Domain kaufen --> Welche Endung?
-5. Evtl. Open-Source für dieses Projekt inklusive einer Lizenz
+4. Evtl. Open-Source für dieses Projekt inklusive einer Lizenz

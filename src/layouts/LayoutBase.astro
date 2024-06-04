@@ -2,12 +2,14 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
 import { ViewTransitions } from "astro:transitions";
 
 const { title } = Astro.props;
 ---
 
-<html lang="de">
+<html lang="lang">
   <head>
     <meta charset="utf-8" />
     <link
@@ -66,9 +68,6 @@ const { title } = Astro.props;
           @apply md:text-xl;
           @apply text-slate-600 selection:text-amber-300;
           @apply dark:text-amber-300 dark:selection:text-slate-600;
-        }
-
-        p {
         }
         h1 {
           @apply font-bold;

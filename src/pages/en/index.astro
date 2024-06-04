@@ -1,7 +1,7 @@
 ---
-import Layout from "../layouts/LayoutBase.astro";
+import Layout from "../../layouts/LayoutBase.astro";
 import { Image } from "astro:assets";
-import PresseFotoKnut from "../images/pressefoto_Knut.jpeg";
+import PresseFotoKnut from "../../images/pressefoto_Knut.jpeg";
 ---
 
 <Layout title="Knut Red">
@@ -12,14 +12,15 @@ import PresseFotoKnut from "../images/pressefoto_Knut.jpeg";
     <Image
       src={PresseFotoKnut}
       class="hover:scale-105 active:scale-95 size-40 md:size-52 border-4 md:border-6 border-slate-500 dark:border-amber-300"
-      alt="Potrait von Knut Rothe"
+      alt="potrait of Knut Rothe"
       loading={"eager"}
     />
     <p class="pt-5 max-w-2xl text-center">
-      Vielseitig | Medien-Informatiker |<br /> Landessprecher der Linksjugend [solid’]
-      Thüringen |<br /> SMM des Kinofilms: Johnny & Me | Alles rund um Dokumentarfilme
+      Versatile | Media Computer Scientist | State Speaker of the Left Youth
+      [solid'] Thuringia | SMM of the movie: Johnny & Me | Everything about
+      documentars
       |
-      <a href="/en">[switch to english]</a>
+      <a href="/">[switch to german]</a>
     </p>
     <p></p>
   </div>
