@@ -7,7 +7,7 @@
 
 1. [Astro View transitions](https://docs.astro.build/en/guides/view-transitions/)
 2. Darkmode
-3. Custom  [404 Page](https://knutred.github.io/404)
+3. Custom [404 Page](https://knutred.github.io/404)
 4. [i18n](https://docs.astro.build/en/recipes/i18n/#translate-routes) Support für Deutsch und Englisch
 
 ## Pläne

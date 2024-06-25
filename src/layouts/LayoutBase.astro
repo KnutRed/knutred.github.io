@@ -30,17 +30,20 @@ const { title } = Astro.props;
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-  
+
     <!-- Add Open Graph tags -->
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:image" content="/og_knutred.png" />
-    <meta property="og:description" content="Knut Rothe ist ein freiberuflicher Medien-Informatiker in Jena" />
+    <meta
+      property="og:description"
+      content="Knut Rothe ist ein freiberuflicher Medien-Informatiker in Jena"
+    />
 
     <title>{title}</title>
   </head>
-  <body class="h-screen flex justify-center">
+  <body class="flex h-screen justify-center">
     <Header />
 
     <main class="my-auto p-5">
