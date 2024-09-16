@@ -13,7 +13,7 @@
 
 ## Pläne
 
-1. Eigene Domain kaufen --> Welche Endung?
+1. Hosting mit Github-Pages verknüpfen
 2. Evtl. Open-Source für dieses Projekt inklusive einer Lizenz
 
 ## Technologien
