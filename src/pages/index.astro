@@ -2,22 +2,38 @@
 import Layout from "../layouts/LayoutBase.astro";
 import { Image } from "astro:assets";
 import PresseFotoKnut from "../images/pressefoto_Knut.jpeg";
+import ConfettiButton from "../components/ConfettiButton.astro";
 ---
+<script is:inline>
+  // Import npm modules.
+  //@ts-ignore because it's a js libary
+  import confetti from "canvas-confetti";
 
+  // Find our component DOM on the page.
+  const confettiButtons = document.querySelectorAll("[confetti-button]");
+
+  // Add event listeners to fire confetti when a button is clicked.
+  confettiButtons.forEach((button) => {
+    button.addEventListener("click", () => confetti());
+  });
+</script>
 <Layout title="Knut Red">
   <div
     transition:animate="slide"
     class="flex flex-col items-center justify-center"
   >
-    <Image
-      src={PresseFotoKnut}
-      class="md:border-6 size-40 border-4 border-slate-500 hover:scale-105 active:scale-95 md:size-52 dark:border-amber-300"
-      alt="Potrait von Knut Rothe"
-      loading={"eager"}
-    />
+    <button confetti-button>
+      <Image
+        src={PresseFotoKnut}
+        class="md:border-6 size-40 border-4 border-slate-500 hover:scale-105 active:scale-95 md:size-52 dark:border-amber-300"
+        alt="Potrait von Knut Rothe"
+        loading={"eager"}
+      />
+    </button>
+
     <p class="max-w-2xl pt-5 text-center">
-      Knut Red | Medien-Informatiker & Videograph |<br /> Landessprecher
-      der Linksjugend ['solid] Thüringen |<br /> Video Zeugs |
+      Knut Red | Medien-Informatiker & Videograph |<br /> Landessprecher der Linksjugend
+      ['solid] Thüringen |<br />
       <a class="font-bold" href="/en">[switch to english]</a>
     </p>
     <p></p>

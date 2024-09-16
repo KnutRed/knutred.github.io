@@ -1,0 +1,16 @@
+<script>
+  // Import npm modules.
+  //@ts-ignore because it's a js libary
+  import confetti from "canvas-confetti";
+
+  // Find our component DOM on the page.
+  const confettiButtons = document.querySelectorAll("[confetti-button]");
+
+  // Add event listeners to fire confetti when a button is clicked.
+  confettiButtons.forEach((button) => {
+    button.addEventListener("click", () => confetti());
+  });
+</script>
+<button confetti-button>
+  <slot />
+</button>
