@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   
-  site: 'http://knut.roteelster.de',
+  site: 'https://knut.roteelster.de',
   
   output: 'static',
   integrations: [tailwind()],
