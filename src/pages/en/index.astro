@@ -18,20 +18,18 @@ import PresseFotoKnut from "../../images/pressefoto_Knut.jpeg";
   }
   // Add event listeners to fire confetti when a button is clicked.
   confettiButtons.forEach((button) => {
-    button.addEventListener("click", () => 
+    button.addEventListener("click", () =>
       confetti({
         angle: randomInRange(55, 125),
         spread: randomInRange(50, 70),
         particleCount: randomInRange(50, 100),
         origin: { y: 0.6 },
       })
-    );      
+    );
   });
 </script>
 <Layout title="Knut Red">
-  <div
-    class="flex flex-col items-center justify-center"
-  >
+  <div class="flex flex-col items-center justify-center">
     <button confetti-button>
       <Image
         src={PresseFotoKnut}
@@ -41,8 +39,8 @@ import PresseFotoKnut from "../../images/pressefoto_Knut.jpeg";
       />
     </button>
     <p class="max-w-2xl pt-5 text-center">
-      Knut Red | Media IT Specialist & Videographer | Speaker of
-      Linksjugend [solid'] Thüringen |
+      Knut Red | Media IT Specialist & Videographer | <br />
+      Speaker of Linksjugend [solid'] Thüringen | <br />
       <a class="font-bold" href="/">[switch to german]</a>
     </p>
     <p></p>
