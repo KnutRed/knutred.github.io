@@ -15,7 +15,7 @@
 
 1. Custom Domain mit --> knut.roteelster.de
 2. Open-Source für dieses Projekt inklusive Lizenz
-3. Mehr Easter-Eggs
+3. Mehr Easter-Eggs!
 
 ## Credits
 
