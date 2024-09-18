@@ -1,7 +1,7 @@
 # Meine kleine [Knut Red / Knut C. Rothe] Persönliche und brutalistische Web-Dev Seite
 
 ![og image](./public/og_knutred.png)
-[knut.roteelster.de](https://knut.roteelster.de)
+Erreichbar unter: [knut.roteelster.de](https://knut.roteelster.de)
 
 ## Features
 
@@ -13,7 +13,7 @@
 
 ## Pläne
 
-1. https Support
+1. SVG-Favicon
 2. Pop-over und andere Ideen zur Projekt-Vorschau
 3. Open-Source für dieses Projekt inklusive Lizenz
 4. Mehr Easter-Eggs!
