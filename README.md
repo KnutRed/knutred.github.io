@@ -15,7 +15,7 @@ Erreichbar unter: [knut.roteelster.de](https://knut.roteelster.de)
 
 1. SVG-Favicon
 2. Pop-over und andere Ideen zur Projekt-Vorschau
-3. Open-Source für dieses Projekt inklusive Lizenz
+3. Open-Source Lizenz für dieses Projekt
 4. Mehr Easter-Eggs!
 
 ## Credits
