@@ -10,6 +10,7 @@ Erreichbar unter: [knut.roteelster.de](https://knut.roteelster.de)
 3. Custom [404 Page](https://knut.roteelster.de/404)
 4. [i18n](https://docs.astro.build/en/recipes/i18n/#translate-routes) Support für Deutsch und Englisch
 5. Easter-Egg 🎉
+6. Open-Source -> Lizenz folgt
 
 ## Pläne
 
