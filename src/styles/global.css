@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@view-transition {
+  navigation: auto;
+}
+
+@font-face {
+  /*
+    Unused so far
+    font-family: "GeistVariableVF";
+    src: url("/fonts/GeistVariableVF.woff2") format("truetype");
+    */
+  font-family: "GeistMonoVariableVF";
+  src: url("/fonts/GeistMonoVariableVF.woff2") format("truetype");
+}
+
+@layer base {
+  html {
+    font-family: "GeistMonoVariableVF", system-ui, sans-serif;
+  }
+  body {
+    @apply bg-amber-300 selection:bg-slate-600;
+    @apply dark:bg-slate-600 dark:selection:bg-amber-300;
+    @apply text-base;
+    @apply md:text-xl;
+    @apply text-slate-600 selection:text-amber-300;
+    @apply dark:text-amber-300 dark:selection:text-slate-600;
+  }
+  h1 {
+    @apply font-black;
+    @apply text-[17px];
+    @apply md:text-[21px];
+  }
+  a {
+    @apply hover:underline;
+    @apply hover:animate-pulse;
+    @apply hover:underline-offset-4;
+  }
+}
