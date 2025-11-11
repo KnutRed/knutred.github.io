@@ -73,6 +73,11 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/${{ steps.detect-package-manager.outputs.cache-dependency-path }}
+      - name: Enable pnpm via Corepack
+        if: ${{ steps.detect-package-manager.outputs.manager == 'pnpm' }}
+        run: |
+          corepack enable
+          corepack prepare pnpm@9 --activate
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
