@@ -15,7 +15,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.8",
     "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.1.9",
+    "astro": "^6.4.6",
     "canvas-confetti": "^1.9.4",
     "prettier-plugin-tailwindcss": "^0.7.3",
     "sharp": "^0.34.5",
